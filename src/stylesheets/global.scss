@@ -1,0 +1,48 @@
+@import "_variables.scss";
+
+// Global Base Styles
+body {
+    background-size: cover;
+    color: $nuskinblue;
+    overflow-x: hidden;
+    margin: 0;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+/* Removing skype link from IE in Contact Information, specifically for Windows Machines */
+img[title *= 'Call'] {
+    display: none !important;
+}
+
+/* To invoke number-keypad on iOS and Andriod devices */
+input[type="tel"] {
+  -moz-appearance: textfield;
+}
+input[type="tel"]::-webkit-inner-spin-button,
+input[type="tel"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type="tel"]:hover,
+input[type="tel"]:focus {
+  -moz-appearance: number-input;
+}
+/* End number-keypad */
+:-moz-ui-invalid:not(output) {
+    box-shadow: none;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.no-margin {
+    margin: 0;
+}
+
+.list-style-none{
+  list-style-type: none;
+}
