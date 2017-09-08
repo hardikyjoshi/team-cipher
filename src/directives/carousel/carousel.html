@@ -1,12 +1,15 @@
-<div class="carousel-wrap">
-    <div class="carousel-nav left" ng-click="ctrl.navLeft()">
-    	<img src="../../../src/assets/images/fill-1-copy.png" alt="left">
+<div class="carousel-wrap" style="width:{{ctrl.visisbleCards*ctrl.cardSize}}px;">
+    <div class="carousel-nav left" ng-class="{'disabled':ctrl.isLeftDisabled()}" ng-click="ctrl.navLeft()">
+    	<img src="../../../src/assets/images/fill-1.png" alt="left">
     </div>
-    <div class="carousel-nav right" ng-click="ctrl.navRight()">
+    <div class="carousel-nav right" ng-class="{'disabled':ctrl.isRightDisabled()}" ng-click="ctrl.navRight()">
     	<img src="../../../src/assets/images/fill-1.png" alt="right">
     </div>
-    <div class="carousel-content" style="left:{{ctrl.translate+'px'}}">
-        <ng-transclude></ng-transclude>
+    <div class="carousel-content-wrap">
+        <div class="carousel-content" style="left:{{ctrl.translate+'px'}};width:{{ctrl.wrapSize}}px;">
+            <ng-transclude></ng-transclude>
+        </div>
     </div>
+    
 </div>
 

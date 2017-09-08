@@ -3,24 +3,30 @@ import "./carousel.scss"
 import {default as carouselTemplate} from './carousel.html'
 var CarouselController = function($scope,$element) {
     var self = this;
-    self.name = "Mit";
-    self.visibleCards = 3;
     self.translate = 0;
-    console.log(self.carouselData);
-    // self.cards = $element[0].querySelector('.card');
-    // self.totalCards = self.cards.length;
-    self.cardSize = 350;
-    // if(self.totalCards>0){
-    //     self.cardSize = self.cards[0].getBoundingClientRect();
-    // }
+    self.cardSize = self.carouselData.cardSize;
+    self.noOfCards = self.carouselData.cards.length;
+    self.wrapSize = self.cardSize*self.noOfCards;
+    self.visisbleCards = self.carouselData.visibleCards;
+    self.currentCard = 0;
+    self.isLeftDisabled = function () {
+        return self.currentCard==0;
+    }
+    self.isRightDisabled = function () {
+        return !(self.currentCard<(self.noOfCards-self.visisbleCards));
+    }
     self.navLeft = function(){
-        self.translate += self.cardSize;
-        console.log('left');
+        if(!self.isLeftDisabled()){
+            self.translate += self.cardSize;
+            self.currentCard--;
+        }
     }
 
     self.navRight = function(){
-        self.translate -= self.cardSize;
-        console.log('right');
+        if(!self.isRightDisabled()){
+            self.translate -= self.cardSize;
+            self.currentCard++;
+        }
     }
 };
 

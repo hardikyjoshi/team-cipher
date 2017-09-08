@@ -1,33 +1,36 @@
-@import "../../../node_modules/bourbon/app/assets/stylesheets/bourbon.scss";
-@import "../../../node_modules/bourbon-neat/core/neat.scss";
-
 .carousel-wrap {
     
-    width: 1083px;
     margin: 0 auto;
     position: relative;
-    overflow: hidden;
     .carousel-nav {
         position: absolute;
-        top: 50%;
-        width: 30px;
+        top: calc(50% - 15px);
+        width: 26px;
         height: 30px;
+        padding-left: 16px;
         background-color: #f9f9f9;
         border-radius: 50%;
-        padding-left: 13px;
         padding-top: 10px;
+        cursor: pointer;
+        &.disabled{
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
     }
     .carousel-nav.left {
-        left: 0;
+        left: -19px;
         z-index: 1000;
+        transform: rotate(180deg);
     }
     .carousel-nav.right {
-        right: 0;
+        right: -11px;
         z-index: 1000;
+    }
+    .carousel-content-wrap{
+        overflow: hidden;
     }
     .carousel-content {
         max-height: 370px;
-        overflow: hidden;
         text-align: center;
         position: relative;
 

@@ -6,15 +6,17 @@
             <h5 class="sub-heading">We know you have got talent and we want you to know it!</h5>
         </div>
         <carousel-component carousel-data="ctrl.carouselData">
-            <card-component ng-repeat="card in ctrl.carouselData.cards">
+            <card-component ng-repeat="card in ctrl.carouselData.cards" card-size="ctrl.carouselData.cardSize">
                 <div class="slide">
                   <div class="span12 text-center">
                     <div class="image-container">
-                        <div class="image" ng-class="'image-data'+$index"></div>
+                        <div class="image">
+							<img ng-src="./src/assets/images/{{card.img}}" alt="">
+						</div>
                     </div>
                     </div>
-                    <h3>Lorem ipsum dolor.</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, officia.</p>
+                    <h3>{{card.title}}</h3>
+                    <p>{{card.detail}}</p>
                 </div>
             </card-component>
         </carousel-component>

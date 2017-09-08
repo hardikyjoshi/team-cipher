@@ -1,9 +1,4 @@
-@import "../../../node_modules/bourbon/app/assets/stylesheets/bourbon.scss";
-@import "../../../node_modules/bourbon-neat/core/neat.scss";
-
 .card-wrap{
-    // @include grid-column(4 of 12);
-    width: 360px;
     max-height: 370px;
     display: inline-block;
 }
