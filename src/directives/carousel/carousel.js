@@ -14,12 +14,12 @@ var CarouselController = function($scope,$element) {
     //     self.cardSize = self.cards[0].getBoundingClientRect();
     // }
     self.navLeft = function(){
-        self.translate -= self.cardSize;
+        self.translate += self.cardSize;
         console.log('left');
     }
 
     self.navRight = function(){
-        self.translate += self.cardSize;
+        self.translate -= self.cardSize;
         console.log('right');
     }
 };

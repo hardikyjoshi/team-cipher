@@ -44,6 +44,7 @@ direction: ltr,
             .text-center {
                 transform: translateX(32%);
                 left: 32%;
+                padding-bottom: 1.875rem;
             }
             .image-container {
                 width: 5rem;
@@ -52,22 +53,23 @@ direction: ltr,
                 border-radius: 50%;
                 float: left;
                 margin-right: 0.9375rem;
-                display: block;
+                display: block; 
                 .image {
                     width: 4.375rem;
                     height: 4.375rem;
                     border: 1px solid $gray-dd;
                     border-radius: 50%;
                     margin: 0.3125rem;
+                    background: $btn-primary;
                 }
                 .image-data0 {
-                    background: url("../../assets/images/cloud.svg") no-repeat center;
+                    background: url("../../assets/images/cloud.svg") no-repeat center $btn-primary;
                 }
                 .image-data1 {
-                    background: url("../../assets/images/computer.svg") no-repeat center;
+                    background: url("../../assets/images/computer.svg") no-repeat center $btn-primary;
                 }
                 .image-data2 {
-                    background: url("../../assets/images/rocket.svg") no-repeat center;
+                    background: url("../../assets/images/rocket.svg") no-repeat center $btn-primary;
                 }
             }
 
