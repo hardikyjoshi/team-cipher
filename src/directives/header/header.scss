@@ -6,34 +6,34 @@
 .header-nav {
     background-color: #5d5c5e;
     padding: 40px;
-
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
     .nav-section {
         display: inline-block;
     }
     .tm-logo {
-        @include grid-column(1 of 12);
+        flex: 1;
     }
     .signup-btn {
-        @include grid-column(1 of 12);
-        float:right;
+        margin-left: 57px;
     }
     .navigation {
-        @include grid-column(10 of 12);
-        &-links {
-            @include grid-column(8 of 12);
-            float:right;
-            &__item {
-                @include grid-column(3 of 12);
-                text-align: center;
-
-                a {
-                    font-family: Montserrat-Bold;
-                    font-size: $base-font-size;
-                    text-transform: uppercase;
-                    text-decoration: none;
-                    color: #ffffff;
-                }
+        li.navigation-links__item{
+            display: inline-block;
+            padding: 0 25px;
+        }
+        a {
+            font-family: Montserrat-Bold;
+            font-size: $base-font-size;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #ffffff;
+            &.active {
+                padding-bottom: 5px;
+                border-bottom: solid 5px #2effb5;
             }
+            letter-spacing: 2px;
         }
         
     }
