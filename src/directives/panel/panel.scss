@@ -1,5 +1,8 @@
 @import "../../../node_modules/bourbon/app/assets/stylesheets/bourbon.scss";
 @import "../../../node_modules/bourbon-neat/core/neat.scss";
+
+@import "../../stylesheets/_variables.scss";
+@import "../../stylesheets/_mixins.scss";
 .span1 {
     @include grid-column(1);
 }
@@ -37,33 +40,73 @@
     @include grid-column(12);
 }
 
+
 .panel-of-judges {
     background: #fff;
     color: #757575;
-    .panel-header {
+    p {
+        font-family: Montserrat-Regular;
+        @include fontsize(14px);
+        margin: 0.3125rem 0;
+    }
+
+    .text-center {
         text-align: center;
         margin: 0 auto;
-        h2{
-            font-size: 32px;
-        }
     }
-    .images-data {
+    h2{
+        @include fontsize(32px);
+        font-family: Montserrat-Bold;
+        margin-top: 3.25rem;
+    }
+    .images-data-container {
         .image-container {
-            width: 80px;
-            height: 80px;
-            border: 1px solid #dddddd;
+            width: 5rem;
+            height: 5rem;
+            border: 1px solid $gray-dd;
             border-radius: 50%;
+            float:left;
+            margin-right: 0.9375rem;
             .image {
-                width: 70px;
-                height: 70px;
-                border: 1px solid #dddddd;
+                width: 4.375rem;
+                height: 4.375rem;
+                border: 1px solid $gray-dd;
                 border-radius: 50%;
-                margin: 5px;
+                margin: 0.3125rem;                
             }
+            
             /*.image-data0{
-                background: url(../../assests/images/abc.png);
+                background: url(../../assests/images/image1.png) no-repeat center;
+            }
+            .image-data1{
+                background: url(../../assests/images/image2.png) no-repeat center;
+            }
+            .image-data2{
+                background: url(../../assests/images/image3.png) no-repeat center;
+            }
+            .image-data3{
+                background: url(../../assests/images/image4.png) no-repeat center;
             }*/
         }
-        
+        .images-data {
+            float: left;
+            h4 {
+                font-family: Montserrat-Regular;
+                @include fontsize(20px);
+                margin: 0.5rem 0;
+            }
+        }        
+    }
+
+    hr {
+        color: $gray-dd;
+    }
+    .lorem-data {
+        margin-top: 3.25rem;
+        margin-bottom: 2.25rem;
+        width: 34.3125rem;
+    }
+    .btn-primary {
+        margin-bottom:  2.8125rem;
     }
 }

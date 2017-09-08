@@ -1,13 +1,24 @@
 <section class="panel-of-judges">
-    <div class="panel-header">
+    <div class="panel-header text-center">
         <h2>Panel of Judges</h2>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, autem.</p>
     </div>
-    <div class="images-data span12">
+    <div class="images-data-container span12">
         <div class="span3" ng-repeat="panelData in ctrl.panelData">
             <div class="image-container">
                 <div class="image"  ng-class="'image-data'+$index"></div>
             </div>
+            <div class="images-data">
+                <h4>{{panelData.imageName}}</h4>
+                <p>{{panelData.imageType}}</p>
+            </div>
         </div>
+    </div>
+    <hr class="span12"/>
+    <div class="span12">
+        <p class="text-center lorem-data">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim quam consectetur quibusdam magni minus aut modi aliquid.</p>
+    </div>
+    <div class="span12 text-center">
+        <button class="btn btn-primary">Click Here</button>
     </div>
 </section>
