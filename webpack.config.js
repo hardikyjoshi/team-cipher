@@ -176,6 +176,7 @@ module.exports = {
             name: 'client',
             logger: str => console.log(`>> ${str}`)
         }),
+        new webpack.HotModuleReplacementPlugin()
         //new SWPrecacheWebpackPlugin()
     ],
     devtool: 'source-map'
