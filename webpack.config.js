@@ -168,6 +168,9 @@ module.exports = {
         },{
             from: 'src/**/*.html',
             to: __dirname + '/public'
+        },{
+            from: 'src/**/*.otf',
+            to: __dirname + '/public'
         }]),
         new webpack.LoaderOptionsPlugin({
             debug: true
