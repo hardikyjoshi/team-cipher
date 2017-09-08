@@ -3,11 +3,12 @@
 @import "../../stylesheets/variables.scss";
 @import "../../stylesheets/_mixins.scss";
 
-.header-nav {
+.header-section {
     background-color: #5d5c5e;
     padding: 40px;
     overflow: hidden;
     display: flex;
+    color: #fff;
     flex-direction: row;
     .nav-section {
         display: inline-block;
@@ -37,4 +38,28 @@
         }
         
     }
+
+    
+}
+.hero-section {
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &__heading {
+        font-family: ExodusDemo-Stencil;
+        letter-spacing: 4.5px;
+        font-size: 36px;
+        text-transform: uppercase;
+    }
+    &__description {
+        font-size: 14px;
+        font-family: Montserrat-Regular;
+        letter-spacing: 1.8px;
+    }
+    &__btn {
+        margin-top: 40px;
+    }
+
 }
