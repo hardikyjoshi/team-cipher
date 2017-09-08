@@ -11,9 +11,28 @@ $my-custom-grid: (
 .content{
     @include grid-container;
     .hero{
-        @include grid-column(12,$my-custom-grid);
-        div{
-            @include grid-column(6 of 12);
+        
+    }
+    .middle-section{
+        background-color: #f2f2f2;
+        .section-heading {
+            padding: 50px 0;
+            text-align: center;
+            .heading {
+                font-size: 32px;
+                font-weight: 600;
+                letter-spacing: 4px;
+                color: #757575;
+                margin:0;
+            }
+            .sub-heading {
+                font-size: 14px;
+                font-weight: 300;
+                letter-spacing: 1.8px;
+                color: #757575;
+                margin:0;
+                margin-top:10px;
+            }
         }
     }
 
