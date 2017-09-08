@@ -20,6 +20,9 @@ export class CipherAppClass {
             $rootScope.$on("$stateChangeSuccess", function(event, currentRoute, previousRoute) {
 
                 window.scrollTo(0, 0);
+                if('serviceWorker' in navigator) {
+                    navigator.serviceWorker.register('./service-worker.js');
+                }
             
             });
 
