@@ -3,29 +3,29 @@
 @import "../../stylesheets/variables.scss";
 $my-footer-grid: (
     columns: 12,
-    gutter: 0px,
-    media: 1200px,
+    gutter: 0rem, /* 0/16 */
+    media: 75rem, /* 1200/16 */
     color: rgba(#00d4ff, 0.25),
     direction: ltr,
   );
 .footer-section{
     @include grid-column(12, $my-footer-grid);
     background: $gray-light;
-    border: 1px solid $gray-dd;
+    border: 0.0625rem solid $gray-dd; /* 1/16 */
     .footer-container{
         padding: 2.5rem;
     }
     .footer-option-container{
-        padding-bottom: 50px;
+        padding-bottom: 3.125rem; /* 50/16 */
         overflow: hidden;
-        border-bottom: 1px solid $gray-dd;
+        border-bottom: 0.0625rem solid $gray-dd; /* 1/16 */
     }
     .footer-options{
         @include grid-column(3 of 12);
     }
     .footer-option-label{
         font-size: 1.25rem;
-        letter-spacing: 2.5px;
+        letter-spacing: 2.0.3125rem; /* 5/16 */
         text-align: left;
         color: $gray-boulder;
         margin: 0;
@@ -35,7 +35,7 @@ $my-footer-grid: (
         font-size: 0.875rem;
         font-weight: $montserrat-light;
         line-height: 1.57;
-        letter-spacing: 1.8px;
+        letter-spacing: 1.0.5rem; /* 8/16 */
         text-align: left;
         color: $gray-boulder;
         margin-top:0.625rem;
@@ -60,9 +60,9 @@ $my-footer-grid: (
         width: 1.5rem;
         height: 1.5rem;
         float: right;
-        padding: 5px;
+        padding: 0.3125rem; /* 5/16 */
     }
     .social-copyright-wrapper{
-        padding: 5px;
+        padding: 0.3125rem; /* 5/16 */
     }
 }

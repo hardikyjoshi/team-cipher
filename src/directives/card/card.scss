@@ -2,8 +2,7 @@
 @import "../../../node_modules/bourbon-neat/core/neat.scss";
 
 .card-wrap{
-    // @include grid-column(4 of 12);
-    width: 360px;
-    max-height: 370px;
+    width: 22.5rem;
+    max-height: 23.125rem; 
     display: inline-block;
 }

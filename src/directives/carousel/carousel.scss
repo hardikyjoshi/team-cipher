@@ -3,19 +3,19 @@
 
 .carousel-wrap {
     
-    width: 1083px;
+    width: 67.6875rem; 
     margin: 0 auto;
     position: relative;
     overflow: hidden;
     .carousel-nav {
         position: absolute;
         top: 50%;
-        width: 30px;
-        height: 30px;
+        width: 1.875rem; 
+        height: 1.875rem; 
         background-color: #f9f9f9;
         border-radius: 50%;
-        padding-left: 13px;
-        padding-top: 10px;
+        padding-left: 0.8125rem; 
+        padding-top: 0.625rem; 
     }
     .carousel-nav.left {
         left: 0;
@@ -26,7 +26,7 @@
         z-index: 1000;
     }
     .carousel-content {
-        max-height: 370px;
+        max-height: 23.125rem; 
         overflow: hidden;
         text-align: center;
         position: relative;

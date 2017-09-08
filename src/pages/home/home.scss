@@ -2,8 +2,8 @@
 @import "../../../node_modules/bourbon-neat/core/neat.scss";
 @import "../../stylesheets/_mixins.scss";
 $my-custom-grid: ( columns: 12,
-gutter: 10px,
-media: 1200px,
+gutter: 0.625rem, /* 10/16 */
+media: 75rem, /* 1200/16 */
 color: rgba(#00d4ff, 0.25),
 direction: ltr,
 );
@@ -12,14 +12,14 @@ direction: ltr,
     
     .middle-section{
         background-color: #f2f2f2;
-        padding-bottom: 60px;
+        padding-bottom: 3.75rem; /* 60/16 */
         .section-heading {
             padding: 3.125rem 0;
             text-align: center;
             .heading {
                 font-size: 2rem;
                 font-weight: 600;
-                letter-spacing: 4px;
+                letter-spacing: 0.25rem; /* 4/16 */
                 color: #757575;
                 margin: 0;
                 font-family: Montserrat-bold;
@@ -27,7 +27,7 @@ direction: ltr,
             .sub-heading {
                 font-size: 0.875rem;
                 font-weight: 300;
-                letter-spacing: 1.8px;
+                letter-spacing: 1.0.5rem; /* 8/16 */
                 color: #757575;
                 margin: 0;
                 margin-top: 0.625rem;
@@ -37,10 +37,10 @@ direction: ltr,
         .slide {
             padding: 2.5rem;
             background-color: #ffffff;
-            @include radius(5px);
+            @include radius(0.3125rem); /* 5/16 */
             background-color: #ffffff;
-            max-width: 360px;
-            margin-right: 10px;
+            max-width: 22.5rem; /* 360/16 */
+            margin-right: 0.625rem; /* 10/16 */
             .text-center {
                 transform: translateX(32%);
                 left: 32%;
@@ -49,7 +49,7 @@ direction: ltr,
             .image-container {
                 width: 5rem;
                 height: 5rem;
-                border: 1px solid $gray-dd;
+                border: 0.0625em solid $gray-dd; /* 1/16 */
                 border-radius: 50%;
                 float: left;
                 margin-right: 0.9375rem;
@@ -57,7 +57,7 @@ direction: ltr,
                 .image {
                     width: 4.375rem;
                     height: 4.375rem;
-                    border: 1px solid $gray-dd;
+                    border: 0.0625rem solid $gray-dd; /* 1/16 */
                     border-radius: 50%;
                     margin: 0.3125rem;
                     background: $btn-primary;
@@ -75,13 +75,13 @@ direction: ltr,
 
             h3 {
                 color: #757575;
-                @include fontsize(24px);
+                @include fontsize(1.5rem); /* 24/16 */
                 font-family: Montserrat-Bold;
-                letter-spacing: 3px;
+                letter-spacing: 0.1875rem; /* 3/16 */
             }
             p {
                 line-height: 1.57;
-                letter-spacing: 1.8px;
+                letter-spacing: 1.0.5rem; /* 8/16 */
                 text-align: left;
                 color: #757575;
                 font-family: Montserrat-Light;

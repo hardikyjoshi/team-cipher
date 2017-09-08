@@ -3,7 +3,6 @@ import "./home.scss"
 
 var HomeController = function($scope, sharedService) {
     var self = this;
-    self.name = "Hardik";
     self.carouselData = {
         cards: [{
                 title: 'ddf'
