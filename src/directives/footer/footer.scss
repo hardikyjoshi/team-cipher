@@ -1,0 +1,69 @@
+@import "../../../node_modules/bourbon/app/assets/stylesheets/bourbon.scss";
+@import "../../../node_modules/bourbon-neat/core/neat.scss";
+@import "../../stylesheets/variables.scss";
+$my-footer-grid: (
+    columns: 12,
+    gutter: 0px,
+    media: 1200px,
+    color: rgba(#00d4ff, 0.25),
+    direction: ltr,
+  );
+.footer-section{
+    @include grid-column(12, $my-footer-grid);
+    background: $gray-light;
+    border: 1px solid $gray-dd;
+    .footer-container{
+        padding: 2.5rem;
+    }
+    .footer-option-container{
+        padding-bottom: 50px;
+        overflow: hidden;
+        border-bottom: 1px solid $gray-dd;
+    }
+    .footer-options{
+        @include grid-column(3 of 12);
+    }
+    .footer-option-label{
+        font-size: 1.25rem;
+        letter-spacing: 2.5px;
+        text-align: left;
+        color: $gray-boulder;
+        margin: 0;
+        font-family: Montserrat-Bold;
+        font-weight: $montserrat-semibold;
+    }
+    .footer-option-description{
+        font-size: 0.875rem;
+        font-weight: $montserrat-light;
+        line-height: 1.57;
+        letter-spacing: 1.8px;
+        text-align: left;
+        color: $gray-boulder;
+        margin-top:0.625rem;
+        font-family: Montserrat-Regular;
+    }
+    .copyright-section{
+        @include grid-column(6 of 12);
+        font-family: Montserrat-Light;
+        font-size: 0.625rem;
+        font-weight: $montserrat-light;
+        line-height: 1.4;
+        text-align: left;
+        color: $gray-shaft;
+        margin-left: 0;
+    }
+    .social-media-section{
+        @include grid-column(6 of 12);
+        margin-left:0;
+        float: right;  
+    }
+    .social-media-icon{
+        width: 1.5rem;
+        height: 1.5rem;
+        float: right;
+        padding: 5px;
+    }
+    .social-copyright-wrapper{
+        padding: 5px;
+    }
+}

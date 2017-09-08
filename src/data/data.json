@@ -15,5 +15,42 @@
         "imageName": "Lorem ipsum",
         "imageType":"FE-Developer"
     }
+    ],
+
+    "footerData": [
+        {
+            "optionHeading": "Lorem Ipsum",
+            "optionDescription": "Lorem ipsum dolor sit Nesciunt itaque, alias possimus"
+        },
+        {
+            "optionHeading": "Lorem Ipsum",
+            "optionDescription": "Lorem ipsum dolor sit Nesciunt itaque, alias possimus"
+        },
+        {
+            "optionHeading": "Lorem Ipsum",
+            "optionDescription": "Lorem ipsum dolor sit Nesciunt itaque, alias possimus"
+        },
+        {
+            "optionHeading": "Lorem Ipsum",
+            "optionDescription": "Lorem ipsum dolor sit Nesciunt itaque, alias possimus"
+        }
+    ],
+    "footerSocialMedia": [
+        {
+            "iconUrl": "../src/assets/images/facebook.svg",
+            "iconName": "Facebook"
+        },
+        {
+            "iconUrl": "../src/assets/images/twitter.svg",
+            "iconName": "Twitter"
+        },
+        {
+            "iconUrl": "../src/assets/images/instagram.svg",
+            "iconName": "Instagram"
+        },
+        {
+            "iconUrl": "../src/assets/images/message.svg",
+            "iconName": "Message"
+        }
     ]
 }

@@ -9,6 +9,8 @@ var HomeController = function($scope,sharedService) {
 
         promise.then(function(data) {
         	console.log(data);
+            self.footerData = data.footerData;
+            self.footerSocialMedia = data.footerSocialMedia;
         });
     }
 };
