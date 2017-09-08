@@ -46,7 +46,7 @@
     color: #757575;
     p {
         font-family: Montserrat-Regular;
-        @include fontsize(0.875em); /* 14/16 */
+        font-size: 0.875rem; /* 14/16 */
         margin: 0.3125rem 0;
     }
 
@@ -55,7 +55,7 @@
         margin: 0 auto;
     }
     h2{
-        @include fontsize(2rem); /* 32/16 */
+        font-size: 2rem; /* 32/16 */
         font-family: Montserrat-Bold;
         margin-top: 3.25rem;
         letter-spacing: 0.25rem; /* 4/16 */
@@ -95,7 +95,7 @@
             float: left;
             h4 {
                 font-family: Montserrat-Regular;
-                @include fontsize(1.25rem); /* 20/16 */
+                font-size: 1.25rem; /* 20/16 */
                 margin: 0.5rem 0;
             }
         }        

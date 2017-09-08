@@ -75,7 +75,7 @@ direction: ltr,
 
             h3 {
                 color: #757575;
-                @include fontsize(1.5rem); /* 24/16 */
+                font-size: 1.5rem; /* 24/16 */
                 font-family: Montserrat-Bold;
                 letter-spacing: 0.1875rem; /* 3/16 */
             }
