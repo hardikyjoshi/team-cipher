@@ -9,7 +9,7 @@ var CarouselController = function($scope,$element) {
     console.log(self.carouselData);
     // self.cards = $element[0].querySelector('.card');
     // self.totalCards = self.cards.length;
-    self.cardSize = 360;
+    self.cardSize = 350;
     // if(self.totalCards>0){
     //     self.cardSize = self.cards[0].getBoundingClientRect();
     // }

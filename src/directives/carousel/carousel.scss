@@ -2,8 +2,9 @@
 @import "../../../node_modules/bourbon-neat/core/neat.scss";
 
 .carousel-wrap {
-    // @include grid-column(12);
-    margin: 0 90px;
+    
+    width: 1110px;
+    margin: 0 auto;
     position: relative;
     .carousel-nav {
         position: absolute;
