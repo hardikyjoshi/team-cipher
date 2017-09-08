@@ -8,7 +8,7 @@
   "scripts": {
     "build": "webpack",
     "watch": "webpack --watch",
-    "dev": "webpack-dev-server --inline --host 0.0.0.0 --port 4000 --hot --content-base public/"
+    "dev": "webpack-dev-server --inline --host 0.0.0.0 --port 4000 --hot --open --content-base public/"
   },
   "dependencies": {
     "angular": "1.5.5",
