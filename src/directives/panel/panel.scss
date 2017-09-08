@@ -58,8 +58,11 @@
         @include fontsize(32px);
         font-family: Montserrat-Bold;
         margin-top: 3.25rem;
+        letter-spacing: 4px;
+        margin-bottom: 0;
     }
     .images-data-container {
+        padding: 3.25rem 0;
         .image-container {
             width: 5rem;
             height: 5rem;
