@@ -1,11 +1,11 @@
 @import "_variables.scss";
 
-@include font-face('Montserrat-Black','../../src/assets/fonts/Montserrat-Black');
-@include font-face('Montserrat-Bold','../../src/assets/fonts/Montserrat-Bold');
-@include font-face('Montserrat-Hairline','../../src/assets/fonts/Montserrat-Hairline');
-@include font-face('Montserrat-Light','../../src/assets/fonts/Montserrat-Light');
-@include font-face('Montserrat-Regular','../../src/assets/fonts/Montserrat-Regular');
-@include font-face('ExodusDemo-Stencil','../../src/assets/fonts/ExodusDemo-Stencil');
+@include font-face('Montserrat-Black', '../../src/assets/fonts/Montserrat-Black');
+@include font-face('Montserrat-Bold', '../../src/assets/fonts/Montserrat-Bold');
+@include font-face('Montserrat-Hairline', '../../src/assets/fonts/Montserrat-Hairline');
+@include font-face('Montserrat-Light', '../../src/assets/fonts/Montserrat-Light');
+@include font-face('Montserrat-Regular', '../../src/assets/fonts/Montserrat-Regular');
+@include font-face('ExodusDemo-Stencil', '../../src/assets/fonts/ExodusDemo-Stencil');
 
 
 // Global Base Styles
@@ -25,6 +25,32 @@ body {
     margin: 0;
 }
 
-.list-style-none{
-  list-style-type: none;
+.list-style-none {
+    list-style-type: none;
+}
+
+.btn {
+    font-family: Montserrat-Bold;
+    @include fontsize(16px);
+    padding: 0.8125rem 1.875rem;
+    border: none;
+    outline: none;
+    letter-spacing: 2px;
+    cursor: pointer;
+    @include radius(100px);
+
+    &.btn-primary {
+        background-color: $btn-primary;
+        text-transform: uppercase;
+        color: $gray-4a;
+        &:hover{
+          @include opacity(0.8);
+        }
+    }
+
+    &.btn-secondary {
+        background: transparent;
+        border: 1px solid $btn-primary;
+        color: $btn-primary;
+    }
 }
