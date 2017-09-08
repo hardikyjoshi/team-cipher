@@ -1,7 +1,19 @@
-[
 {
-    "name": "hardik"
-},
-{
-    "name": "mit"
-}]
+    "panelData": [{
+        "imageName": "Lorem ipsum",
+        "imageType":"FE-Developer"
+    },
+    {
+        "imageName": "Lorem ipsum",
+        "imageType":"Visual-Designer"
+    },
+    {
+        "imageName": "Lorem ipsum",
+        "imageType":"Visual-Designer"
+    },
+    {
+        "imageName": "Lorem ipsum",
+        "imageType":"FE-Developer"
+    }
+    ]
+}
