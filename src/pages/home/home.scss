@@ -1,18 +1,18 @@
 @import "../../../node_modules/bourbon/app/assets/stylesheets/bourbon.scss";
 @import "../../../node_modules/bourbon-neat/core/neat.scss";
-
-$my-custom-grid: (
-    columns: 12,
-    gutter: 10px,
-    media: 1200px,
-    color: rgba(#00d4ff, 0.25),
-    direction: ltr,
-  );
-.content{
+@import "../../stylesheets/_mixins.scss";
+$my-custom-grid: ( columns: 12,
+gutter: 10px,
+media: 1200px,
+color: rgba(#00d4ff, 0.25),
+direction: ltr,
+);
+.content {
     @include grid-container;
     
     .middle-section{
         background-color: #f2f2f2;
+        padding-bottom: 60px;
         .section-heading {
             padding: 3.125rem 0;
             text-align: center;
@@ -34,6 +34,27 @@ $my-custom-grid: (
                 font-family: Montserrat-regular;
             }
         }
-    }
+        .slide {
+            padding: 2.5rem;
+            background-color: #ffffff;
+            @include radius(5px);
+            background-color: #ffffff;
+            max-width: 360px;
+            margin-right: 10px;
 
+            h3 {
+                color: #757575;
+                @include fontsize(24px);
+                font-family: Montserrat-Bold;
+                letter-spacing: 3px;
+            }
+            p {
+                line-height: 1.57;
+                letter-spacing: 1.8px;
+                text-align: left;
+                color: #757575;
+                font-family: Montserrat-Light;
+            }
+        }
+    }
 }

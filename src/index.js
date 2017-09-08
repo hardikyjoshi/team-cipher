@@ -5,6 +5,8 @@ import "./stylesheets/main.scss";
 
 // ***  Components 					***//
 import "./directives/header/header.js";
+import "./directives/card/card.js";
+import "./directives/carousel/carousel.js";
 import "./directives/footer/footer.js";
 import "./directives/panel/panel.js";
 

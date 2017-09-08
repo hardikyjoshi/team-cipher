@@ -1,9 +1,21 @@
 import CipherApp from "../../app.js";
 import "./home.scss"
 
-var HomeController = function($scope,sharedService) {
+var HomeController = function($scope, sharedService) {
     var self = this;
     self.name = "Hardik";
+    self.carouselData = {
+        cards: [{
+                title: 'ddf'
+            },
+            {
+                title: 'ddf2'
+            },
+            {
+                title: 'ddf3'
+            }
+        ]
+    }
     self.init = function() {
         var promise = sharedService.getJSON();
 
@@ -15,6 +27,6 @@ var HomeController = function($scope,sharedService) {
     }
 };
 
-HomeController.$inject = ['$scope','sharedService'];
+HomeController.$inject = ['$scope', 'sharedService'];
 
 CipherApp.module.controller('homeController', HomeController);
