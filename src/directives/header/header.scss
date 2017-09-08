@@ -5,7 +5,7 @@
 
 .header-section {
     background-color: #5d5c5e;
-    padding: 40px;
+    padding: 2.5rem;
     overflow: hidden;
     display: flex;
     color: #fff;
@@ -17,12 +17,12 @@
         flex: 1;
     }
     .signup-btn {
-        margin-left: 57px;
+        margin-left: 3.5625rem;
     }
     .navigation {
         li.navigation-links__item{
             display: inline-block;
-            padding: 0 25px;
+            padding: 0 1.5625rem;
         }
         a {
             font-family: Montserrat-Bold;
@@ -31,10 +31,10 @@
             text-decoration: none;
             color: #ffffff;
             &.active {
-                padding-bottom: 5px;
-                border-bottom: solid 5px #2effb5;
+                padding-bottom: 0.3125rem;
+                border-bottom: solid 0.3125rem #2effb5;
             }
-            letter-spacing: 2px;
+            letter-spacing: 0.1667rem;
         }
         
     }
@@ -50,16 +50,16 @@
     &__heading {
         font-family: ExodusDemo-Stencil;
         letter-spacing: 4.5px;
-        font-size: 36px;
+        font-size: 2.25rem;
         text-transform: uppercase;
     }
     &__description {
-        font-size: 14px;
+        font-size: 0.875rem;
         font-family: Montserrat-Regular;
         letter-spacing: 1.8px;
     }
     &__btn {
-        margin-top: 40px;
+        margin-top: 2.5rem;
     }
 
 }
