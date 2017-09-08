@@ -1,19 +1,16 @@
 @import "../../../node_modules/bourbon/app/assets/stylesheets/bourbon.scss";
 @import "../../../node_modules/bourbon-neat/core/neat.scss";
-
-$my-custom-grid: (
-    columns: 12,
-    gutter: 10px,
-    media: 1200px,
-    color: rgba(#00d4ff, 0.25),
-    direction: ltr,
-  );
-.content{
+@import "../../stylesheets/_mixins.scss";
+$my-custom-grid: ( columns: 12,
+gutter: 10px,
+media: 1200px,
+color: rgba(#00d4ff, 0.25),
+direction: ltr,
+);
+.content {
     @include grid-container;
-    .hero{
-        
-    }
-    .middle-section{
+    .hero {}
+    .middle-section {
         background-color: #f2f2f2;
         .section-heading {
             padding: 3.125rem 0;
@@ -23,17 +20,39 @@ $my-custom-grid: (
                 font-weight: 600;
                 letter-spacing: 4px;
                 color: #757575;
-                margin:0;
+                margin: 0;
             }
             .sub-heading {
                 font-size: 0.875rem;
                 font-weight: 300;
                 letter-spacing: 1.8px;
                 color: #757575;
-                margin:0;
-                margin-top:0.625rem;
+                margin: 0;
+                margin-top: 0.625rem;
+            }
+        }
+        .slide {
+            padding: 2.5rem;
+            background-color: #ffffff;
+            @include radius(5px);
+            background-color: #ffffff;
+            @include shadow(#000000);
+            max-width: 360px;
+            margin-right: 10px;
+
+            h3 {
+                color: #757575;
+                @include fontsize(24px);
+                font-family: Montserrat-Bold;
+                letter-spacing: 3px;
+            }
+            p {
+                line-height: 1.57;
+                letter-spacing: 1.8px;
+                text-align: left;
+                color: #757575;
+                font-family: Montserrat-Light;
             }
         }
     }
-
 }

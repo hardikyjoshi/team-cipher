@@ -5,5 +5,14 @@
       <h3 class="heading">Previous hackathon's Journies</h3>
       <h5 class="sub-heading">We know you have got talent and we want you to know it!</h5>
 	</div>
+    <carousel-component carousel-data="ctrl.carouselData">
+          <card-component ng-repeat="card in ctrl.carouselData.cards">
+              <div class="slide">
+                  <div class="icn-container"></div>
+                  <h3>Lorem ipsum dolor.</h3>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non, officia.</p>
+                </div>
+          </card-component>
+      </carousel-component>
   </section>
 </div>
