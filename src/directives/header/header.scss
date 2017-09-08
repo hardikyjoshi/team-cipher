@@ -7,6 +7,9 @@
     background-color: #5d5c5e;
     padding: 40px;
 
+    .nav-section {
+        display: inline-block;
+    }
     .tm-logo {
         @include grid-column(1 of 12);
     }
@@ -24,9 +27,11 @@
                 text-align: center;
 
                 a {
+                    font-family: Montserrat-Bold;
                     font-size: $base-font-size;
                     text-transform: uppercase;
                     text-decoration: none;
+                    color: #ffffff;
                 }
             }
         }
