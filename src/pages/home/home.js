@@ -1,4 +1,5 @@
 import CipherApp from "../../app.js";
+import "./home.scss"
 
 var HomeController = function($scope,sharedService) {
     var self = this;

@@ -1,0 +1,19 @@
+@import "../../../node_modules/bourbon/app/assets/stylesheets/bourbon.scss";
+@import "../../../node_modules/bourbon-neat/core/neat.scss";
+
+$my-custom-grid: (
+    columns: 12,
+    gutter: 10px,
+    media: 1200px,
+    color: rgba(#00d4ff, 0.25),
+    direction: ltr,
+  );
+.content{
+    @include grid-container;
+    .hero{
+        @include grid-column(12,$my-custom-grid);
+        div{
+            @include grid-column(6 of 12);
+        }
+    }
+}

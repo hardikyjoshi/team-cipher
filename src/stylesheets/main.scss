@@ -1,3 +1,11 @@
+@import "../../node_modules/bourbon/app/assets/stylesheets/bourbon.scss";
+@import "../../node_modules/bourbon-neat/core/neat.scss";
+
 @import "./_variables.scss";
 @import "./_mixins.scss";
 @import "./global.scss";
+
+
+h1{
+    color:red;
+}
