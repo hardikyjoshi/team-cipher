@@ -1,30 +1,4 @@
 require('babel-polyfill');
-// // var $ = require('jquery');
-
-// // require('./vendors/jquery-ui/jquery-ui.min.js');
-// // require('./vendors/jquery-ui-touch/jquery.ui.touch-punch.min.js');
-
-// // require('tether/dist/js/tether.js');
-// // require('bootstrap/dist/js/bootstrap.min.js');
-// // require('./vendors/cropper/cropper.min.js');
-
-// var angular = require('angular');
-// var uiRouter = require('angular-ui-router');
-// var sanitize = require('angular-sanitize');
-// // var uiMask = require('angular-ui-mask');
-// var ngMessages = require('angular-messages');
-// // var AppComponent = require('./app.component.js');
-// var Shared = require('./__shared/shared');
-// // var SignupPages = require('./signup/signuppages');
-// // var nuskinRegister = require('./nuskin-register/register');
-// // var CommerceComponent = require('./commerce/commerce');
-// // var digitalToolkitComponents = require('./digital-toolkit/digital.toolkit');
-// // var prospectTargetingComponent = require('./prospect-targeting/prospect.targeting');
-// var Styles = require('./stylesheets/base.scss');
-// // var SlickStyle = require('./stylesheets/vendors/slick/slick.scss');
-// // var SlickThemeStyle = require('./stylesheets/vendors/slick/slick-theme.scss');
-// // var homescreenpage = require('./homescreen/pages/homescreen');
-// // var ngSortable = require('./vendors/ng-sortable/ng-sortable.min.js');
 
 import angular from "angular";
 import "angular-ui-router";
@@ -42,18 +16,11 @@ export class CipherAppClass {
         this.module.$inject = ['$state', '$stateParams', '$rootScope', 'ngMessages'];
 
         this.module.run(($state, $stateParams, $rootScope, $location) => {
-            // $rootScope.strings = strings;
             $rootScope.state = $state;
-            // $rootScope.configs = {};
-            // $rootScope.model = {};
-            // $rootScope.sharedValues = {};
             $rootScope.$on("$stateChangeSuccess", function(event, currentRoute, previousRoute) {
 
                 window.scrollTo(0, 0);
-                // Added for Offline Caching
-                // if ('serviceWorker' in navigator) {
-                //     navigator.serviceWorker.register('./service-worker.js');
-                // }
+            
             });
 
             // TODO: May want to investigate a more sophisticated solution
@@ -75,12 +42,7 @@ export class CipherAppClass {
                 return $rootScope.strings.get('routes', $state.current.name);
             };
         });
-        //This is only for testing purpose.Need to remove this once actual language and market setup.
-        /* var languageData = {
-                             language : "en",
-                             market : "US"
-                         };
-                         userProfileManager.setPageLocaleVal(languageData);*/
+        
     }
 }
 
@@ -91,11 +53,7 @@ var CipherAppConfiguration = function($stateProvider, $locationProvider, $sceDel
         $stateProvider.state(routes.list[i]);
     }
 
-    $sceDelegateProvider.resourceUrlWhitelist([    'self'
-        //     'https://po.st/**',
-        //     'http://pub.mecommercedev.nuskin.com/**',
-        // s3Path+'/**',
-    ]);
+    $sceDelegateProvider.resourceUrlWhitelist(['self']);
 };
 
 
