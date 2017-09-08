@@ -4,6 +4,7 @@ import "./app.js";
 import "./stylesheets/main.scss";
 
 // ***  Components 					***//
+import "./directives/header/header.js";
 //import "./views/components/scrolly/scrolly.js";
 //import "./angular/directives/address-verification/address-verification.js";
 

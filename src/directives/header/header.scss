@@ -1,0 +1,35 @@
+@import "../../../node_modules/bourbon/app/assets/stylesheets/bourbon.scss";
+@import "../../../node_modules/bourbon-neat/core/neat.scss";
+@import "../../stylesheets/variables.scss";
+@import "../../stylesheets/_mixins.scss";
+
+.header-nav {
+    background-color: #5d5c5e;
+    padding: 40px;
+
+    .tm-logo {
+        @include grid-column(1 of 12);
+    }
+    .signup-btn {
+        @include grid-column(1 of 12);
+        float:right;
+    }
+    .navigation {
+        @include grid-column(10 of 12);
+        &-links {
+            @include grid-column(8 of 12);
+            float:right;
+            &__item {
+                @include grid-column(3 of 12);
+                text-align: center;
+
+                a {
+                    font-size: $base-font-size;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                }
+            }
+        }
+        
+    }
+}
