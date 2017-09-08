@@ -1,9 +1,9 @@
 @import "../../../node_modules/bourbon/app/assets/stylesheets/bourbon.scss";
 @import "../../../node_modules/bourbon-neat/core/neat.scss";
 
-.carousel-wrap{
+.carousel-wrap {
     // @include grid-column(12);
-    margin:0 90px;
+    margin: 0 90px;
     position: relative;
     .carousel-nav {
         position: absolute;
@@ -17,13 +17,17 @@
     }
     .carousel-nav.left {
         left: 0;
+        z-index: 1000;
     }
     .carousel-nav.right {
         right: 0;
+        z-index: 1000;
     }
     .carousel-content {
         max-height: 370px;
         overflow: hidden;
-            text-align: center;
+        text-align: center;
+        position: relative;
+
     }
 }

@@ -1,0 +1,20 @@
+<section class="footer-section">
+    <footer class="footer-container">
+        <div class="footer-option-container">
+            <div class="footer-options" ng-repeat="option in ctrl.footerData">
+                <p class="footer-option-label">{{option.optionHeading}}</p>
+                <p class="footer-option-description">{{option.optionDescription}}</p>
+            </div>
+        </div>
+        <div class="social-copyright-wrapper">
+            <div class="copyright-section">
+                <p> Copyright &copy; 2017 Deloitte Development LLC. All rights reserved.</p>
+            </div>
+            <div class="social-media-section">
+                <div class="social-media-icon-container" ng-repeat="icon in ctrl.socialMediaIcons">
+                    <img class="social-media-icon" ng-src='{{icon.iconUrl}}' , alt='{{icon.iconName}}'>
+                </div>
+            </div>
+        </div>
+    </footer>
+</section>

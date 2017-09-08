@@ -20,7 +20,9 @@ var HomeController = function($scope, sharedService) {
         var promise = sharedService.getJSON();
 
         promise.then(function(data) {
-            console.log(data);
+        	console.log(data);
+            self.footerData = data.footerData;
+            self.footerSocialMedia = data.footerSocialMedia;
         });
     }
 };

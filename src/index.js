@@ -7,9 +7,10 @@ import "./stylesheets/main.scss";
 import "./directives/header/header.js";
 import "./directives/card/card.js";
 import "./directives/carousel/carousel.js";
+import "./directives/footer/footer.js";
 //import "./views/components/scrolly/scrolly.js";
 //import "./angular/directives/address-verification/address-verification.js";
-
+import "./directives/panel/panel.js";
 // ***  Pages 					***//
 import "./pages/home/home.js";
 
@@ -18,3 +19,4 @@ import "./services/shared-service.js";
 
 // ***  Factories 					***//
 // import "./factory/birthday-fact.js";
+
